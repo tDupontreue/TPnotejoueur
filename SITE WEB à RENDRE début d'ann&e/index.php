@@ -28,7 +28,7 @@ try{
      if(isset($_POST['connexion'])){
         echo "vous avez entré :".$_POST['login']."et ".$_POST['pass']."en password";
 
-        $requetSql = "SELECT * FROM `user` WHERE 'login' = '"$_POST['login'] "' AND 'pass' = '".$_POST['pass']."';";
+        $requetSql = "SELECT * FROM `user` WHERE 'login' = '"$_POST['login'] "' AND 'pass' = '".$_POST['pass']."';
 
         $resultat = $pdo ->query($requetSql); 
         if( $resultat-> rowcount>0){
